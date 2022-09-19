@@ -4,3 +4,4 @@
 {<img src="https://api.codeclimate.com/v1/badges/3bb21686e36efce0a13f/maintainability" />}[https://codeclimate.com/github/DimaSmolin/python-project-49/maintainability]
 
 https://asciinema.org/a/RvUVIAygnMmB1QgEokzHWtJ7R
+https://asciinema.org/a/Nm849lSmzgDhnaZ8FJrw4BPE1
