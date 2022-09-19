@@ -1,14 +1,18 @@
 import prompt
 
 from brain_games.games.calc_2 import question, gm_answ
+from brain_games.games.nod import rand_digit, gm_ans
 
 
 def general_logic(key):
-    if key == 'key_calc':  # Условие для игры калькулятор
-
+    if key == 'key_calc':  # Условие для игры - Калькулятор
         game_answ = gm_answ
         correct = question
+        first_question = 'What is the result of the expression?'
 
+    elif key == 'key_nod':  # Условие для игры - НОД
+        game_answ = gm_ans
+        correct = rand_digit
         first_question = 'What is the result of the expression?'
 
         print('Welcome to the Brain Games!')
