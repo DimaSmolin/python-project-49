@@ -1,5 +1,5 @@
-from brain_games.games.dvij_2 import general_logics
-from brain_games.games.nod import gm_ans, rand_digit
+from brain_games.game import general_logics
+from brain_games.games.gcd import gm_ans, rand_digit
 
 
 def main():

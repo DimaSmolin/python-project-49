@@ -1,4 +1,4 @@
-from brain_games.games.dvij_2 import general_logics
+from brain_games.game import general_logics
 from brain_games.games.prime import answr_prm, prime_dig
 
 

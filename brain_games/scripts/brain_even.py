@@ -1,9 +1,10 @@
-
-from brain_games.step_5_game import guess_the_honesty
+from brain_games.game import general_logics
+from brain_games.games.even import answr_prm, question_correct_even
 
 
 def main():
-    guess_the_honesty()
+    first_questin = 'Answer "yes" if the number is even, otherwise answer "no".'
+    general_logics(answr_prm, question_correct_even, first_questin)
 
 
 if __name__ == '__main__':
