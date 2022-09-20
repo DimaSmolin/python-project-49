@@ -16,7 +16,7 @@ def quest_corr():
     index_num = my_list.index(char)
     my_list[index_num] = '..'
 
-    print(*my_list)
+    print('Question:', *my_list)
     return char
 
 
