@@ -3,7 +3,8 @@ from brain_games.games.progression import gm_answr, quest_corr
 
 
 def main():
-    general_logics(gm_answr, quest_corr, 'What number is missing in the progression?')
+    first_questin = 'What number is missing in the progression?'
+    general_logics(gm_answr, quest_corr, first_questin)
 
 
 if __name__ == '__main__':
