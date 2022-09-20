@@ -3,8 +3,8 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/3bb21686e36efce0a13f/maintainability)](https://codeclimate.com/github/DimaSmolin/python-project-49/maintainability)
 
-https://asciinema.org/a/RvUVIAygnMmB1QgEokzHWtJ7R
-https://asciinema.org/a/Nm849lSmzgDhnaZ8FJrw4BPE1
-https://asciinema.org/a/F7A1W7I2u0fDif0fbYC5jsvQz
-https://asciinema.org/a/uMz03LrHvEa25VNXbEaoeZxNd
-https://asciinema.org/a/bE9Hhf95AtcyqvJsGV8JpKYeX
+[![asciicast](https://asciinema.org/a/Nm849lSmzgDhnaZ8FJrw4BPE1.svg)](https://asciinema.org/a/Nm849lSmzgDhnaZ8FJrw4BPE1)
+[![asciicast](https://asciinema.org/a/RvUVIAygnMmB1QgEokzHWtJ7R.svg)](https://asciinema.org/a/RvUVIAygnMmB1QgEokzHWtJ7R)
+[![asciicast](https://asciinema.org/a/bE9Hhf95AtcyqvJsGV8JpKYeX.svg)](https://asciinema.org/a/bE9Hhf95AtcyqvJsGV8JpKYeX)
+[![asciicast](https://asciinema.org/a/uMz03LrHvEa25VNXbEaoeZxNd.svg)](https://asciinema.org/a/uMz03LrHvEa25VNXbEaoeZxNd)
+[![asciicast](https://asciinema.org/a/F7A1W7I2u0fDif0fbYC5jsvQz.svg)](https://asciinema.org/a/F7A1W7I2u0fDif0fbYC5jsvQz)
