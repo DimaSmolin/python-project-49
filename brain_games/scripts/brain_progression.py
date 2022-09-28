@@ -1,10 +1,10 @@
-from brain_games.game import general_logics
-from brain_games.games.progression import gm_answr, quest_corr
+from brain_games.engine import starts_games
+from brain_games.games import progression
 
 
 def main():
     first_questin = 'What number is missing in the progression?'
-    general_logics(gm_answr, quest_corr, first_questin)
+    starts_games(progression, first_questin)
 
 
 if __name__ == '__main__':

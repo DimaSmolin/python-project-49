@@ -1,10 +1,10 @@
-from brain_games.game import general_logics
-from brain_games.games.prime import answr_prm, prime_dig
+from brain_games.engine import starts_games
+from brain_games.games import prime
 
 
 def main():
     first_ques = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-    general_logics(answr_prm, prime_dig, first_ques)
+    starts_games(prime, first_ques)
 
 
 if __name__ == '__main__':

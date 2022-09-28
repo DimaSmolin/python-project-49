@@ -1,24 +1,20 @@
 from random import randint
 
 
-def quest_corr():
-    my_list = []
+def question():
+    empty_list = []
 
     start_num = randint(1, 9)
     step_num = randint(2, 5)
     for i in range(10):
-        my_list.append(start_num)
+        empty_list.append(start_num)
         start_num += step_num
 
-    secret_num = randint(0, len(my_list) - 1)
-    char = my_list[secret_num]
+    secret_num = randint(0, len(empty_list) - 1)
+    char = empty_list[secret_num]
 
-    index_num = my_list.index(char)
-    my_list[index_num] = '..'
+    index_num = empty_list.index(char)
+    empty_list[index_num] = '..'
 
-    print('Question:', *my_list)
-    return char
-
-
-def gm_answr():
-    return int(input('Your answer:'))
+    print('Question:', *empty_list)
+    return str(char)

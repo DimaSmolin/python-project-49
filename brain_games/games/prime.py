@@ -1,19 +1,9 @@
 from random import randint
 
+from brain_games.useful_teatures import checking_for_simplicity
 
-def prime_dig():
+
+def question():
     num1 = randint(2, 50)
-    count = 0
     print('Question:', num1)
-    for i in range(2, num1):
-        a = num1 % i
-        if a == 0:
-            count += 1
-    if count == 0:
-        return 'yes'
-    else:
-        return 'no'
-
-
-def answr_prm():
-    return input('Your answer:')
+    return checking_for_simplicity(num1)

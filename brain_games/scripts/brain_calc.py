@@ -1,9 +1,9 @@
-from brain_games.game import general_logics
-from brain_games.games.calc import gm_answ, question
+from brain_games.engine import starts_games
+from brain_games.games import calc
 
 
 def main():
-    general_logics(gm_answ, question, 'What is the result of the expression?')
+    starts_games(calc, 'What is the result of the expression?')
 
 
 if __name__ == '__main__':

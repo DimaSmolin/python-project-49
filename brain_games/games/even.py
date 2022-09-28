@@ -1,14 +1,9 @@
 from random import randint
 
+from brain_games import useful_teatures
 
-def question_correct_even():
+
+def question():
     num = randint(1, 100)
     print('Question:', num)
-    if num % 2 == 0:
-        return 'yes'
-    else:
-        return 'no'
-
-
-def answr_prm():
-    return input('Your answer:')
+    return useful_teatures.parity_check_function(num)

@@ -17,8 +17,4 @@ def question():
         corr_answer = operator.sub(digit_1, digit_2)
     elif char == '*':
         corr_answer = operator.mul(digit_1, digit_2)
-    return corr_answer
-
-
-def gm_answ():
-    return int(input('Your answer:'))
+    return str(corr_answer)
