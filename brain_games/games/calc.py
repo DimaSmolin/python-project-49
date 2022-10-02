@@ -10,7 +10,6 @@ def question_and_answer():
     symbl = '+-*'
     char = choice(symbl)
 
-    correct_answer = 0
     if '+' == char:
         correct_answer = operator.add(random_num1, random_num2)
     elif '-' == char:
