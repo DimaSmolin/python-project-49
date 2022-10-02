@@ -12,14 +12,13 @@ def question():
 
 
 def is_prime(num1):
+    for i in range(2, (num1 // 2) + 1):
+        a = num1 % i
+        if a == 0 or num1 == 1:
+            return False
     if num1 == 1:
         return False
-    else:
-        for i in range(2, (num1 // 2) + 1):
-            a = num1 % i
-            if a == 0:
-                return False
-        return True
+    return True
 
 
 def correct_answer():
