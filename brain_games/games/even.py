@@ -1,14 +1,17 @@
 from random import randint
 
 GAME_MANUAL = 'Answer "yes" if number even otherwise answer "no".'
-NUMBER_OF_ROUNDS = 3
-random_number = 0
 
 
-def question():
-    global random_number
+def question_and_answer():
     random_number = randint(1, 100)
-    return random_number
+
+    if is_even(random_number):
+        correct_answer = 'yes'
+    else:
+        correct_answer = 'no'
+
+    return random_number, correct_answer
 
 
 def is_even(number):
@@ -16,10 +19,3 @@ def is_even(number):
         return True
     else:
         return False
-
-
-def correct_answer():
-    if is_even(random_number):
-        return 'yes'
-    else:
-        return 'no'
