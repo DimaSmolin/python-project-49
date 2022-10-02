@@ -17,7 +17,7 @@ def is_prime(num1):
     else:
         for i in range(2, (num1 // 2) + 1):
             a = num1 % i
-            if a == 0 or num1 == 1:
+            if a == 0:
                 return False
         return True
 
