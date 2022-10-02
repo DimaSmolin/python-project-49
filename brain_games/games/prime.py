@@ -4,14 +4,14 @@ GAME_MANUAL = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def question_and_answer():
-    random_number = randint(2, 50)
+    random_digit = randint(2, 50)
 
-    if is_prime(random_number):
-        correct_answer = 'yes'
+    if is_prime(random_digit):
+        right_answer = 'yes'
     else:
-        correct_answer = 'no'
+        right_answer = 'no'
 
-    return random_number, correct_answer
+    return random_digit, right_answer
 
 
 def is_prime(num1):
