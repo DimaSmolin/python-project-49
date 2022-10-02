@@ -1,20 +1,28 @@
 import operator
 from random import randint, choice
 
+GAME_MANUAL = 'What is the result of the expression?'
+NUMBER_OF_ROUNDS = 3
+random_num1 = 0
+random_num2 = 0
+char = ''
+
 
 def question():
-    digit_1 = randint(1, 100)
-    digit_2 = randint(1, 100)
+    global random_num1, random_num2, char
+    random_num1 = randint(1, 100)
+    random_num2 = randint(1, 100)
     symbl = '+-*'
     char = choice(symbl)
-    random_math = f'{digit_1} {char} {digit_2}'
-    print('Question:', random_math)
+    return f'{random_num1} {char} {random_num2}'
 
-    corr_answer = 0
-    if char == '+':
-        corr_answer = operator.add(digit_1, digit_2)
-    elif char == '-':
-        corr_answer = operator.sub(digit_1, digit_2)
-    elif char == '*':
-        corr_answer = operator.mul(digit_1, digit_2)
-    return str(corr_answer)
+
+def correct_answer():
+    correct_answer_var = 0
+    if '+' == char:
+        correct_answer_var = operator.add(random_num1, random_num2)
+    elif '-' == char:
+        correct_answer_var = operator.sub(random_num1, random_num2)
+    elif '*' == char:
+        correct_answer_var = operator.mul(random_num1, random_num2)
+    return str(correct_answer_var)

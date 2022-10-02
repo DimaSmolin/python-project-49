@@ -1,9 +1,25 @@
 from random import randint
 
-from brain_games import useful_teatures
+GAME_MANUAL = 'Answer "yes" if the number is even, otherwise answer "no".'
+NUMBER_OF_ROUNDS = 3
+random_number = 0
 
 
 def question():
-    num = randint(1, 100)
-    print('Question:', num)
-    return useful_teatures.parity_check_function(num)
+    global random_number
+    random_number = randint(1, 100)
+    return random_number
+
+
+def is_even(number):
+    if number % 2 == 0:
+        return True
+    else:
+        return False
+
+
+def correct_answer():
+    if is_even(random_number):
+        return 'yes'
+    else:
+        return 'no'

@@ -1,19 +1,18 @@
 import prompt
 
 
-#  Это движок,
-
-def starts_games(correct, game_instructions):
-    number_of_rounds = 3
+def start_game(game):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
 
-    print(game_instructions)
+    print(game.GAME_MANUAL)
 
     count = 0
-    for i in range(number_of_rounds):
-        corrct = correct.question()
+    for i in range(game.NUMBER_OF_ROUNDS):
+        question = game.question()
+        print('Question:', str(question))
+        corrct = game.correct_answer()
         answ = prompt.string('Your answer: ')
         if answ == corrct:
             print('Correct!')
@@ -23,5 +22,5 @@ def starts_games(correct, game_instructions):
             print(f"Let's try again, {name}!")
             break
 
-    if count == number_of_rounds:
+    if count == game.NUMBER_OF_ROUNDS:
         print(f'Congratulations, {name}!')

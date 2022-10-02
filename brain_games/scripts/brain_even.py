@@ -1,10 +1,9 @@
-from brain_games.engine import starts_games
+from brain_games.engine import start_game
 from brain_games.games import even
 
 
 def main():
-    first_questin = 'Answer "yes" if the number is even, otherwise answer "no".'
-    starts_games(even, first_questin)
+    start_game(even)
 
 
 if __name__ == '__main__':
